@@ -21,11 +21,11 @@ function Buy() {
       [name]: value,
     });
   };
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     const backend = import.meta.env.VITE_BACKEND;
-    console.log(backend);
 
-    const response = await fetch(backend, {
+    const response = await fetch(`${backend}/order`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
