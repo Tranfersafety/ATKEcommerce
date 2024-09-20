@@ -20,7 +20,7 @@ function Step4() {
   return (
     <div className="w-full flex flex-col items-center">
       <span className="text-2xl font-semibold mb-5">
-        หยดสารละลายที่ได้จากหลอดทดลองลงบนชุดทดสอบ COVID-19 เพื่อตรวจหาผลการทดสอบ
+        หยดสารละลายที่ได้จากหลอดทดลองลงบนชุดทดสอบ 3 หยด เพื่อตรวจหาผลการทดสอบ
         จับเวลา 15 นาที
       </span>
       <div className="text-4xl font-bold mb-5">{format(time)}</div>
