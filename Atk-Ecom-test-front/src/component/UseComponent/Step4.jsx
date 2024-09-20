@@ -5,6 +5,9 @@ function Step4() {
   const [time, setTime] = useState(900);
 
   useEffect(() => {
+    if (time < 1) {
+      return;
+    }
     const timer = setInterval(() => {
       setTime(time - 1);
     }, 1000);
