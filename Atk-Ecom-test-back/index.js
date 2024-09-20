@@ -8,13 +8,10 @@ const app = express();
 
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: "http://localhost:5173", // Specify the origin you want to allow
-  })
-);
+app.use(cors());
 
 dotenv.config();
+
 const connectDB = async () => {
   await mongoose.connect(process.env.MONGO_URI, {});
 };
