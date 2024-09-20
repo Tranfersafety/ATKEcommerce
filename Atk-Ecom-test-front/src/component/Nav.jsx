@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="  text-gray-600  bg-gray-100 w-full sticky top-0 z-50">
+    <nav className="  text-gray-600  bg-gray-100 w-full sticky top-0 z-50 ">
       <div className="flex w-[1440px] py-6 px-28">
         <svg
           width="106"

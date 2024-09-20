@@ -7,10 +7,10 @@ import Product from "../assets/image/product.png";
 
 function MainPage() {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center ">
       <Nav />
       <main className=" w-[1440px]">
-        <article>
+        <article className="pb-10 border border-white border-b-gray-300">
           <img
             src={main}
             alt="covid strip"
@@ -41,7 +41,7 @@ function MainPage() {
             </Link>
           </div>
         </article>
-        <article className="flex ">
+        <article className="flex border mb-10 border-white border-b-gray-300 ">
           <img src={Product} alt="product" className="my-20  mx-[140px] " />
           <div>
             <div className=" mt-12 mb-8  text-gray-800  ">

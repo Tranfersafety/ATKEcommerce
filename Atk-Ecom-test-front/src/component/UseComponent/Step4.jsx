@@ -14,7 +14,7 @@ function Step4() {
   const format = (time) => {
     const minute = Math.floor(time / 60);
     const second = time % 60;
-    return `${minute}:${second}`;
+    return `${minute}:${second < 10 ? "0" + second : second}`;
   };
 
   return (
@@ -23,7 +23,7 @@ function Step4() {
         หยดสารละลายที่ได้จากหลอดทดลองลงบนชุดทดสอบ COVID-19 เพื่อตรวจหาผลการทดสอบ
         จับเวลา 15 นาที
       </span>
-      <div className="text-4xl font-bold mb-5" >{format(time)}</div>
+      <div className="text-4xl font-bold mb-5">{format(time)}</div>
       <img src={procedure4} alt="firststep" className="w-[600px] mb-16" />
     </div>
   );
