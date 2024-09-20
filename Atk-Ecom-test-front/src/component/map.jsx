@@ -3,8 +3,10 @@ import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 
 function Mapgoogle({ setFormData }) {
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-  const lat = import.meta.env.VITE_LAT;
-  const lng = import.meta.env.VITE_LNG;
+  const lat = +import.meta.env.VITE_LAT;
+  const lng = +import.meta.env.VITE_LNG;
+
+  console.log(lat, lng);
 
   return (
     <APIProvider apiKey={apiKey}>
